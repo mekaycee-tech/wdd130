@@ -1,0 +1,44 @@
+/* Home Page
+   Author: Kelechi David Agoro */
+
+/* General paragraph padding reset */
+p {
+    padding: 0;
+}
+
+/* Main content width limit */
+main {
+    max-width: 840px;
+}
+
+/* Profile image inside main */
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Aside section - country/state info */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    /* 1️⃣ */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+/* Image inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
