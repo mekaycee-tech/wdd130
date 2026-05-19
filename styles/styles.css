@@ -15,11 +15,6 @@ h1 {
     color: #808080
 }
 
-/* Main content width limit */
-main {
-    max-width: 840px;
-}
-
 /* Profile image inside main */
 main img {
     width: 150px;
@@ -32,6 +27,11 @@ main img {
 /* General paragraph padding reset */
 p {
     padding: 0;
+}
+
+/* Main content width limit */
+main {
+    max-width: 840px;
 }
 
 /* Aside section - country/state info */
