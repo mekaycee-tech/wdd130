@@ -1,9 +1,18 @@
-/* Home Page
+/* WDD 130 | Home Page
    Author: Kelechi David Agoro */
+nav {
+    background-color: #808080;
+    padding: 10px;
+}
 
-/* General paragraph padding reset */
-p {
-    padding: 0;
+nav a {
+    color: #FFFFFF;
+    padding: 10px;
+    display: block;
+}
+
+h1 {
+    color: #808080
 }
 
 /* Main content width limit */
@@ -18,6 +27,11 @@ main img {
     border: 1px solid #4682B4;
     padding: 2px;
     box-shadow: 0 0 30px #808080;
+}
+
+/* General paragraph padding reset */
+p {
+    padding: 0;
 }
 
 /* Aside section - country/state info */
