@@ -77,7 +77,7 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 67px;
+    top: 50px;
     left: 150px;
 }
 
@@ -91,7 +91,7 @@ footer {
 /* Class Selectors */
 .box {
     margin: 1rem;
-    border: 1px sold rgb(0 0 0 / 10%);
+    border: 1px sold rgba(0 0 0 / .1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
