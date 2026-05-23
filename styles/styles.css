@@ -1,5 +1,12 @@
 /* WDD 130 | Home Page
    Author: Kelechi David Agoro */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: #808080;
     padding: 10px;
@@ -22,6 +29,8 @@ main img {
     border: 1px solid #4682B4;
     padding: 2px;
     box-shadow: 0 0 30px #808080;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 /* General paragraph padding reset */
@@ -48,6 +57,7 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
 }
 
 /* Image inside aside */
@@ -56,9 +66,24 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 67px;
+    left: 150px;
+}
+
 /* Footer styling */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px sold rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
