@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font size: 16px;
+    font-family: Roboto, Arial, san-serif;
+}
+
 nav {
     background-color: #808080;
     padding: 10px;
@@ -19,7 +24,7 @@ nav a {
 }
 
 h1 {
-    color: #808080
+    color: #808080 padding: .5rem
 }
 
 /* Profile image inside main */
@@ -31,6 +36,10 @@ main img {
     box-shadow: 0 0 30px #808080;
     float: right;
     margin: 0 0 1rem 1rem;
+}
+
+p {
+    margin: 1rem;
 }
 
 /* General paragraph padding reset */
@@ -86,4 +95,8 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
