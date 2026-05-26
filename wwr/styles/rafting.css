@@ -43,14 +43,19 @@ nav, p, section, article {
 }
 
 /* ==========================================================================
-   2. Layout & Footer Specific Elements
+   2. Layout, Navigation, & Footer Specific Elements
    ========================================================================== */
+/* Navigation link hover effect - USING THE SECONDARY COLOR HERE */
+nav a:hover {
+  color: var(--secondary-color);
+}
+
 /* Remove text decoration from social icons */
 .socialmedia a {
   text-decoration: none;
 }
 
-/* Ensure footer icons align politely if needed */
+/* Ensure footer icons align politely */
 .socialmedia img {
   width: 32px;
   height: 32px;
@@ -95,13 +100,13 @@ h1 {
   border-radius: 4px;
 }
 
-/* Floated Article Image */
+/* Floated Article Image - ALSO USING SECONDARY COLOR AS A BORDER ACCENT */
 .hero article img {
   float: right;
   width: 125px;
   height: auto;
   margin-left: 16px;
   margin-bottom: 8px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--secondary-color); 
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
