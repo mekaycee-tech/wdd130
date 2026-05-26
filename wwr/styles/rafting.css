@@ -1,0 +1,107 @@
+/* ==========================================================================
+   1. Design Tokens (Variables) & Base Reset
+   ========================================================================== */
+:root {
+  --primary-color: #0d47a1;     /* Deep River Blue */
+  --secondary-color: #e67e22;   /* Safety Orange Accent */
+  --accent1-color: #2c3e50;       /* Dark Slate Charcoal */
+  --accent2-color: #f8f9fa;       /* Soft Light Grey */
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Universal Box-Model Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Body Styling */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: var(--accent2-color);
+}
+
+/* Center Content & Limit Page Width */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Typography Base Styling */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Global Grid/Spacing Layout Rules */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* ==========================================================================
+   2. Layout & Footer Specific Elements
+   ========================================================================== */
+/* Remove text decoration from social icons */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Ensure footer icons align politely if needed */
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   3. Hero Component & Absolute Positioning Overlays
+   ========================================================================== */
+/* Relative Container Setup */
+.hero {
+  position: relative;
+}
+
+/* Base Background Image Layer */
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay Title Heading */
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.85;
+  background-color: var(--accent1-color);
+  color: #ffffff;
+}
+
+/* Overlay Article Box */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.85); /* Semitransparent white */
+  padding: 16px;
+  border-radius: 4px;
+}
+
+/* Floated Article Image */
+.hero article img {
+  float: right;
+  width: 125px;
+  height: auto;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
