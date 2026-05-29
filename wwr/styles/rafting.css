@@ -37,20 +37,62 @@ h1, h2 {
 }
 
 /* Global Grid/Spacing Layout Rules */
-nav, p, section, article {
+p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
 /* ==========================================================================
-   2. Layout, Navigation, & Footer Specific Elements
+   2. Layout, Navigation, & Header/Footer Specific Elements
    ========================================================================== */
+/* Header Grid Layout */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+/* Logo Sizing */
+.logo {
+  max-height: 70px;
+  width: auto;
+}
+
+/* Flexbox Navigation Links */
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 /* Navigation link hover effect - USING THE SECONDARY COLOR HERE */
-nav a:hover {
+header nav a:hover {
   color: var(--secondary-color);
 }
 
+/* Footer layout */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-top: 1px solid #ccc;
+}
+
 /* Remove text decoration from social icons */
+.socialmedia {
+  display: flex;
+  gap: 12px;
+}
+
 .socialmedia a {
   text-decoration: none;
 }
@@ -109,4 +151,44 @@ h1 {
   margin-bottom: 8px;
   border: 2px solid var(--secondary-color); 
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ==========================================================================
+   4. History & Adventure Sections Layout
+   ========================================================================== */
+.history-section h2, 
+.adventures-section h2 {
+  margin-bottom: 12px;
+}
+
+/* Adventures Grid Styling - Handles 5 Horizontal Elements */
+.adventures-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.adventures-grid figure {
+  margin: 0;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.adventures-grid figure img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover; /* Ensures consistency across different image dimensions */
+  display: block;
+}
+
+.adventures-grid figcaption {
+  font-size: 0.85rem;
+  padding: 8px;
+  font-weight: bold;
+  color: var(--accent1-color);
 }
